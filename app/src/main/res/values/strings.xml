@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">PMDM-2223</string>
+    <string name="app_name">MultiContador</string>
+    <string name="Boton1">RESET ALL</string>
+    <string name="Boton2">+1</string>
+    <string name="Boton3">+1</string>
+    <string name="Boton4">+1</string>
+    <string name="Boton5">+1</string>
+    <string name="Boton22">RESET</string>
+    <string name="Boton33">RESET</string>
+    <string name="Boton44">RESET</string>
+    <string name="Boton55">RESET</string>
+    <string name="Text1">0</string>
+    <string name="Text2">0</string>
+    <string name="Text3">0</string>
+    <string name="Text4">0</string>
+    <string name="Text5">0</string>
 </resources>
