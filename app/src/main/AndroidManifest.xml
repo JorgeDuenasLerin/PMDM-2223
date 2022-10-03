@@ -14,7 +14,8 @@
         tools:targetApi="31">
         <activity
             android:name=".UT01_002"
-            android:exported="true">
+            android:exported="true"
+            android:launchMode="standard">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
