@@ -1,4 +1,4 @@
-package com.example.pmdm_2223;
+package com.example.pmdm_2223.ut01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.example.pmdm_2223.R;
 
 public class UT01_002 extends AppCompatActivity {
 

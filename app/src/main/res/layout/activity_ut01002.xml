@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UT01_002">
+    tools:context=".ut01.UT01_002">
 
     <Button
         android:id="@+id/bGlobal"

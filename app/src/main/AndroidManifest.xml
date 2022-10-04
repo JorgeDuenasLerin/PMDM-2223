@@ -13,7 +13,7 @@
         android:theme="@style/Theme.PMDM2223"
         tools:targetApi="31">
         <activity
-            android:name=".UT01_002"
+            android:name=".ut01.UT01_002"
             android:exported="true"
             android:launchMode="standard">
             <meta-data
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".UT01_001"
+            android:name=".ut01.UT01_001"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

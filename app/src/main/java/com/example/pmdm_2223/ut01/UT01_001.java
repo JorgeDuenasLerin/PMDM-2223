@@ -1,9 +1,11 @@
-package com.example.pmdm_2223;
+package com.example.pmdm_2223.ut01;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+
+import com.example.pmdm_2223.R;
 
 public class UT01_001 extends AppCompatActivity {
 

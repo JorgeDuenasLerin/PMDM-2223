@@ -1,6 +1,4 @@
-package com.example.pmdm_2223;
-
-import android.widget.TextView;
+package com.example.pmdm_2223.ut01;
 
 public class Contador {
     int count;
