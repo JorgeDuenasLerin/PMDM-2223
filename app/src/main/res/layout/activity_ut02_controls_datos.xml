@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.controls.ut02ControlsActivityDatos">
+
+    <TextView
+        android:id="@+id/idut02Tel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Teléfono"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/idut02Email"
+        app:layout_constraintTop_toBottomOf="@+id/idut02EmailEdit" />
+
+    <TextView
+        android:id="@+id/idut02Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/idut02Nombre"
+        app:layout_constraintTop_toBottomOf="@+id/idut02NombreEdit" />
+
+    <TextView
+        android:id="@+id/idut02Nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Nombre"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idut02NombreEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:imeOptions="actionGo"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idut02Nombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idut02Nombre"
+        app:layout_constraintTop_toTopOf="@+id/idut02Nombre" />
+
+    <EditText
+        android:id="@+id/idut02EmailEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:imeOptions="actionGo"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idut02Email"
+        app:layout_constraintEnd_toEndOf="@+id/idut02NombreEdit"
+        app:layout_constraintStart_toStartOf="@+id/idut02NombreEdit"
+        app:layout_constraintTop_toTopOf="@+id/idut02Email" />
+
+    <EditText
+        android:id="@+id/idut02TelEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Teléfono"
+        android:imeOptions="actionGo"
+        android:inputType="phone"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idut02Tel"
+        app:layout_constraintEnd_toEndOf="@+id/idut02EmailEdit"
+        app:layout_constraintStart_toStartOf="@+id/idut02EmailEdit"
+        app:layout_constraintTop_toTopOf="@+id/idut02Tel" />
+
+    <TextView
+        android:id="@+id/idut02Output"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="#8BC34A"
+        android:backgroundTint="#8BC34A"
+        android:lineSpacingExtra="8sp"
+        android:padding="15dp"
+        android:text="asdsad"
+        android:textColor="#003140"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/idut02TelEdit"
+        app:layout_constraintStart_toStartOf="@+id/idut02TelEdit"
+        app:layout_constraintTop_toBottomOf="@+id/idut02TelEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
