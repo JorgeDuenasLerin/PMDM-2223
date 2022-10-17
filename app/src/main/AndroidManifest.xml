@@ -21,18 +21,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ut02.layouts.ActivityLayouts"
+            android:name=".ut02.layouts.ut02ActivityLayouts"
             android:exported="true">
         </activity>
         <activity
             android:name=".ut02.controls.ut02ControlsActivityDatos"
             android:exported="true">
-
         </activity>
         <activity
             android:name=".ut01.UT01_002"
-            android:exported="true"
-            android:launchMode="standard">
+            android:exported="true">
         </activity>
         <activity
             android:name=".ut01.UT01_001"

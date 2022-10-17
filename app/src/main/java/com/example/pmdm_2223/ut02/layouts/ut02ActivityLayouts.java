@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.example.pmdm_2223.R;
 
-public class ActivityLayouts extends AppCompatActivity {
+public class ut02ActivityLayouts extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

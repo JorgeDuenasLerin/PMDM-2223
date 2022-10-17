@@ -2,6 +2,7 @@ package com.example.pmdm_2223.ut02.controls;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -58,6 +59,7 @@ public class ut02ControlsPPT extends AppCompatActivity {
         });
 
         View.OnClickListener manejador = new View.OnClickListener() {
+            @SuppressLint("ResourceAsColor")
             @Override
             public void onClick(View v) {
                 Jugada maquina = maquinaJuega();
@@ -74,11 +76,21 @@ public class ut02ControlsPPT extends AppCompatActivity {
 
                 if(maquina == jugador) {
                     result.setText("Empate");
+                    result.setBackgroundColor(0xFFFEF5E7);
                 } else if(
-                        (maquina == Jugada.PAPEL) && (jugador == Jugada.TIJERA) ||
-                        ((maquina == Jugada.TIJERA) && (jugador == Jugada.PAPEL))
+                        ((maquina == Jugada.PAPEL) && (jugador == Jugada.TIJERA)) ||
+                        ((maquina == Jugada.PIEDRA) && (jugador == Jugada.PAPEL)) ||
+                        ((maquina == Jugada.TIJERA) && (jugador == Jugada.PIEDRA))
                 ) {
-                    // Ganas
+                    iYo++;
+                    puntosYo.setText(""+iYo);
+                    result.setText("¡Ganas!");
+                    result.setBackgroundColor(0xFFD5F5E3);
+                } else {
+                    iMaquina++;
+                    puntosMaquina.setText(""+iMaquina);
+                    result.setText("Pierdes :(");
+                    result.setBackgroundColor(0xFFFADBD8);
                 }
             }
         };
@@ -88,13 +100,17 @@ public class ut02ControlsPPT extends AppCompatActivity {
         piedra.setOnClickListener(manejador);
     }
 
+
     int iYo;
     int iMaquina;
+
     private void reset(){
         iYo = 0;
         iMaquina = 0;
         puntosYo.setText(""+iYo);
         puntosMaquina.setText(""+iMaquina);
+        result.setText("");
+        jugada.setText("");
     }
 
     private Jugada maquinaJuega(){

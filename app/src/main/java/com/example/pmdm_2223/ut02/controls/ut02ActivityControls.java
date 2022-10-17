@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.example.pmdm_2223.R;
 
-public class ActivityControls extends AppCompatActivity {
+public class ut02ActivityControls extends AppCompatActivity {
 
     TextView tvArriba;
     @Override
