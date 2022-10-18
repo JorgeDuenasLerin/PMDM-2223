@@ -14,4 +14,9 @@
     <string name="Text3">0</string>
     <string name="Text4">0</string>
     <string name="Text5">0</string>
+    <string-array name="ciudades">
+        <item>Madrid</item>
+        <item>Santander</item>
+        <item>Santiago</item>
+    </string-array>
 </resources>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.activities.ut02RecogerViaje">
+
+    <TextView
+        android:id="@+id/ut02labelCiudad14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Fecha:"
+        app:layout_constraintEnd_toEndOf="@+id/ut02labelCiudad5"
+        app:layout_constraintTop_toBottomOf="@+id/switch1" />
+
+
+    <EditText
+        android:id="@+id/ut02RecogerHoraIda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="time"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ut02labelCiudad3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ut02labelCiudad3"
+        app:layout_constraintTop_toTopOf="@+id/ut02labelCiudad5" />
+
+    <TextView
+        android:id="@+id/ut02labelCiudad4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Fecha:"
+        app:layout_constraintEnd_toEndOf="@+id/ut02labelCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerCiudad" />
+
+    <TextView
+        android:id="@+id/ut02labelCiudad5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hora:"
+        app:layout_constraintEnd_toEndOf="@+id/ut02labelCiudad2"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerFechaIda" />
+
+    <TextView
+        android:id="@+id/ut02labelCiudad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hora:"
+        app:layout_constraintEnd_toEndOf="@+id/ut02labelCiudad2"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerFechaIda" />
+
+    <TextView
+        android:id="@+id/ut02labelCiudad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Fecha:"
+        app:layout_constraintEnd_toEndOf="@+id/ut02labelCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerCiudad" />
+
+    <TextView
+        android:id="@+id/ut02labelCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ciudad:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/ut02RecogerCiudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:entries="@array/ciudades"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ut02labelCiudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ut02labelCiudad"
+        app:layout_constraintTop_toTopOf="@+id/ut02labelCiudad" />
+
+    <EditText
+        android:id="@+id/ut02RecogerFechaIda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ut02labelCiudad2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ut02RecogerCiudad"
+        app:layout_constraintTop_toTopOf="@+id/ut02labelCiudad2"
+        app:layout_constraintVertical_bias="0.551" />
+
+    <EditText
+        android:id="@+id/ut02RecogerFechaVuelta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/ut02labelCiudad14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ut02labelCiudad14"
+        app:layout_constraintTop_toTopOf="@+id/ut02labelCiudad14" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ida y Vuelta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ut02RecogerHoraIda"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerHoraIda" />
+
+    <TextView
+        android:id="@+id/ut02labelCiudad15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Hora:"
+        app:layout_constraintEnd_toEndOf="@+id/ut02labelCiudad14"
+        app:layout_constraintTop_toBottomOf="@id/ut02RecogerFechaVuelta" />
+
+    <EditText
+        android:id="@+id/ut02RecogerHoraVuelta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/ut02labelCiudad15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ut02labelCiudad15"
+        app:layout_constraintTop_toTopOf="@+id/ut02labelCiudad15" />
+
+    <EditText
+        android:id="@+id/ut02RecogerNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerHoraVuelta" />
+
+    <EditText
+        android:id="@+id/ut02RecogerDireccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Dirección"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ut02RecogerNombre"
+        app:layout_constraintStart_toStartOf="@+id/ut02RecogerNombre"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerNombre" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="DNI"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/ut02RecogerDireccion"
+        app:layout_constraintStart_toStartOf="@+id/ut02RecogerDireccion"
+        app:layout_constraintTop_toBottomOf="@+id/ut02RecogerDireccion" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
