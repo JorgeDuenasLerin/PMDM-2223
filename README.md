@@ -6,14 +6,17 @@
 Crea un juego de de Piedra, Papel o Tijera. Busca los recursos que más te gusten en Internet.
 
 ### Información de viaje
-En este ejercicio colaborarán dos actividades, una de recogida de información y otra para mostrarla.
+En este ejercicio colaborarán dos actividades, una para recogida de información y otra para mostrarla.
 
 Recogida:
-- Crea una actividad para recoger los datos de un viaje en tren.
+- Crea una actividad para recoger los datos de un viaje en taxi.
 - Ciudades: Madrid, Santander, Santiago.
-- Se pedirá la fecha, se pedirá si es ida y vuelta o solo ida.
-- En caso de ser solo ida y vuelta, tendrá también fecha de vuelta.
+  - Ver: [Spinner](https://developer.android.com/develop/ui/views/components/spinner)
+- Se pedirá la fecha y la hora de salida
+- Se pedirá si es "ida y vuelta" o "solo ida".
+- En caso de ser "ida y vuelta", tendrá también fecha y hora de vuelta.
 - Nombre de la persona que viaja.
+- Dirección de recogida
 - DNI de la persona que viaja
 
 NOTA:
