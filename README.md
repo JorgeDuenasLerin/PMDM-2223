@@ -32,16 +32,15 @@ Una vez los datos están validados, la actividad una creará un Objeto Viaje (De
 Mejoras para la recogida de datos de la aplicación de viajes:
 
 Doc oficial [https://developer.android.com/develop/ui/views/components/pickers](https://developer.android.com/develop/ui/views/components/pickers)
-Cómo acceder a los datos. Manejadores. [https://programacionymas.com/blog/como-pedir-fecha-android-usando-date-picker](https://developer.android.com/develop/ui/views/components/pickers)
+Cómo acceder a los datos. Manejadores. [https://programacionymas.com/blog/como-pedir-fecha-android-usando-date-picker](https://programacionymas.com/blog/como-pedir-fecha-android-usando-date-picker)
 
-*Lanzar para resultado*
+#### Lanzar para resultado
 
-Ver ejemplo de lanzar actividad para resultado
+Ver ejemplo de lanzar actividad para resultado en el proyecto. Hacer mini actividad del aula virtual.
 
 Haz que la aplicación que muestra la información pida confirmación de los datos con dos botones: Confirmar o Cancelar. Al volver a la actividad principal mostrará un Toas con la decisión: "Usuario confirma información" o "Usuario cancela". En el caso de cancelar se limpiarán todos los datos.
 
 [https://developer.android.com/guide/topics/ui/notifiers/toasts?hl=es-419](https://developer.android.com/guide/topics/ui/notifiers/toasts?hl=es-419)
-
 
 ## Unidad de trabajo 1
 
