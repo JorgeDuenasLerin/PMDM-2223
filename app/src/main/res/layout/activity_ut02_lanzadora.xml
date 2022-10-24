@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ut02.resultados.ut02Lanzadora">
+
+    <EditText
+        android:id="@+id/ut02idResultadosText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cadena"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ut02idResultadosBoton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanza"
+        app:layout_constraintEnd_toEndOf="@+id/ut02idResultadosText"
+        app:layout_constraintStart_toStartOf="@+id/ut02idResultadosText"
+        app:layout_constraintTop_toBottomOf="@+id/ut02idResultadosText" />
+
+    <TextView
+        android:id="@+id/ut02idResultadosLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="@+id/ut02idResultadosBoton"
+        app:layout_constraintStart_toStartOf="@+id/ut02idResultadosBoton"
+        app:layout_constraintTop_toBottomOf="@+id/ut02idResultadosBoton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
