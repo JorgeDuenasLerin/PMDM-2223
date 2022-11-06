@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/ut03ListaNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Madrid vs Carabanchel" />
+
+    <TextView
+        android:id="@+id/ut03ListaResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0- 5" />
+</LinearLayout>
