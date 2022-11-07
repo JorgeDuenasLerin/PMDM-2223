@@ -9,9 +9,12 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.pmdm_2223.R;
 
-public class PartidoAdapter extends RecyclerView.Adapter<PartidoAdapter.ViewHolder> {
+import java.util.ArrayList;
+import java.util.Arrays;
 
-    private Partido[] datos;
+public class ut03PartidoAdapter extends RecyclerView.Adapter<ut03PartidoAdapter.ViewHolder> {
+
+    private ArrayList<ut03Partido> datos;
 
     /**
      * Provide a reference to the type of views that you are using
@@ -44,8 +47,9 @@ public class PartidoAdapter extends RecyclerView.Adapter<PartidoAdapter.ViewHold
      * @param dataSet String[] containing the data to populate views to be used
      * by RecyclerView.
      */
-    public PartidoAdapter(Partido[] dataSet) {
-        datos = dataSet;
+    public ut03PartidoAdapter(ut03Partido[] dataSet) {
+        datos = new ArrayList<ut03Partido>();
+        add(dataSet);
     }
 
     // Create new views (invoked by the layout manager)
@@ -64,13 +68,18 @@ public class PartidoAdapter extends RecyclerView.Adapter<PartidoAdapter.ViewHold
 
         // Get element from your dataset at this position and replace the
         // contents of the view with that element
-        viewHolder.getTextPartido().setText(datos[position].local + " vs " + datos[position].visitante);
-        viewHolder.getTextResultado().setText(datos[position].resultado);
+        viewHolder.getTextPartido().setText(datos.get(position).local + " vs " + datos.get(position).visitante);
+        viewHolder.getTextResultado().setText(datos.get(position).resultado);
     }
 
     // Return the size of your dataset (invoked by the layout manager)
     @Override
     public int getItemCount() {
-        return datos.length;
+        return datos.size();
+    }
+
+    public void add(ut03Partido[] dataSet){
+        datos.addAll(Arrays.asList(dataSet));
+        notifyDataSetChanged();
     }
 }
