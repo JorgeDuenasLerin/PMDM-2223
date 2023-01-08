@@ -1,5 +1,7 @@
 # PMDM-2223
 
+Ver planificación en [planificación](./PLANIFICACIÓN.md)
+
 ## Mini proyectos
 
 ### Piedra papel o tijera
