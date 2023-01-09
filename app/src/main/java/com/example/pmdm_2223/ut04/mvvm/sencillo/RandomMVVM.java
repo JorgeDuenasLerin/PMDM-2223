@@ -30,14 +30,15 @@ public class RandomMVVM extends AppCompatActivity {
         });
 
         get.setOnClickListener(view -> {
-            viewmodel.getRandom();
+            // Lanza la petición al ViewModel
+            viewmodel.generarRandom();
         });
 
         // Obtener el ViewModel
         // Lo gestiona Android
         viewmodel = new ViewModelProvider(this).get(RandomViewModel.class);
         viewmodel.getDato().observe(this, randomModel -> {
-            label.setText(""+randomModel);
+            label.setText(""+randomModel.getRandom());
         });
     }
 }

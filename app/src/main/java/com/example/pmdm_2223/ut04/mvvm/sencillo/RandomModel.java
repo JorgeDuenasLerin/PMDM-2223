@@ -9,14 +9,13 @@ public class RandomModel {
         random = 0;
     }
 
-    public void newRandom() {
-        RandomModel.performAction();
-        random = (int) (Math.random()*MAX_RAND);
+    public int getRandom() {
+        return random;
     }
 
-    public int getLastRandom(){
+    public void generateRandom(){
         RandomModel.performAction();
-        return random;
+        random = (int) (Math.random()*MAX_RAND);
     }
 
     /***

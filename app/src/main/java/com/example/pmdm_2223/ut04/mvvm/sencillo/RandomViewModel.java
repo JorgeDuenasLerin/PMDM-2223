@@ -13,7 +13,7 @@ public class RandomViewModel extends ViewModel {
     private RandomModel randomModel;
 
     // Información observable
-    private MutableLiveData<Integer> dato;
+    private MutableLiveData<RandomModel> dato;
 
     // Envoltorio para Thread, ejecución de tareas segundo plano
     private ExecutorService executor;
@@ -23,23 +23,20 @@ public class RandomViewModel extends ViewModel {
         executor = Executors.newSingleThreadExecutor();
     }
 
-    public LiveData<Integer> getDato() {
+    public LiveData<RandomModel> getDato() {
         if (dato == null) {
-            dato = new MutableLiveData<Integer>();
+            dato = new MutableLiveData<RandomModel>();
+            dato.setValue(randomModel);
         }
         return dato;
     }
 
     public void generarRandom() {
         executor.execute(() -> {
-            randomModel.newRandom();
-        });
-    }
-
-    public void getRandom() {
-        executor.execute(() -> {
-            int r = randomModel.getLastRandom();
-            dato.postValue(r);
+            // Petición que tarda
+            randomModel.generateRandom();
+            // No se establece en el acto. Actualiza el Thread de la UI
+            dato.postValue(randomModel);
         });
     }
 }

@@ -28,7 +28,27 @@ Separación de lógica de presentación y lógica de aplicación. No todo el có
 
 ![MVVM](resources/mvvm.png)
 
+[Vídeo](https://www.youtube.com/watch?v=-xTqfilaYow&ab_channel=PhilippLackner)
+
+
+**LiveData y MutableLiveData**
+
+Extraído de la documentación de Android:
+
+LiveData es una clase de contenedor de datos observables. A diferencia de un observable regular, LiveData está optimizado para ciclos de vida, lo que significa que respeta el ciclo de vida de otros componentes de las apps, como actividades, fragmentos o servicios. Esta optimización garantiza que LiveData solo actualice observadores de componentes de apps que tienen un estado de ciclo de vida activo.
+
+LiveData considera que un observador, que está representado por la clase Observer, está en estado activo si su ciclo de vida está en el estado STARTED o RESUMED. LiveData solo notifica a los observadores activos sobre las actualizaciones. Los observadores inactivos registrados para ver objetos LiveData no reciben notificaciones sobre los cambios.
+
+
 Hablar del ejercicio de número aleatorio
+
+- Modelo número aleatorio
+- ModelView expone los datos aleatorios del modelo
+- View observa los cambios
+
+Reto para clase:
+
+Siguiendo este esquema MVVM. Realiza una aplicación para buscar números primos aleatorios entre dos números dados por el usuario. Para no complicar la lógica el usuario introducirá los números bien (primero menor que el segundo y ambos positivos). Por ejemplo el usuario pide un número primo entre 1000 y 2000, la aplicación generará números aleatorios entre 1000 y 2000 hasta que encuentre un número primo, entonces parará.
 
 ### Seguir ejemplo
 
@@ -44,3 +64,12 @@ Tendrá un botón calcular que utilizará un ViewModel y un Model para realizar 
 Los cálculos tardan un tiempo aleatorio en realizarse, mientras se espera el cálculo se reportará un mensaje "Esperando al servicio de cálculo"
 
 
+
+## API Retrofit
+
+
+
+## Retrofit y ListView
+
+
+https://learntodroid.com/consuming-a-rest-api-using-retrofit2-with-the-mvvm-pattern-in-android/
