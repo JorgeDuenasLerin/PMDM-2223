@@ -26,7 +26,7 @@ Separación de lógica de presentación y lógica de aplicación. No todo el có
 - ModelView: Enlaza la UI con el modelo.
 - Model: Datos y transformaciones
 
-![MVVM](resources/mvvm.png)
+![MVVM](./../resources/mvvm.png)
 
 [Vídeo](https://www.youtube.com/watch?v=-xTqfilaYow&ab_channel=PhilippLackner)
 
