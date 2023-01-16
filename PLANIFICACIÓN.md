@@ -5,7 +5,7 @@
   - Semana 9-13 - Java
     - [MVVM](#MVVM)
   - Semana 16-20
-    - API Retrofit
+    - [API Retrofit](#api-retrofit)
   - Semana 23-27
     - Retrofit y ListView
 - Febrero
@@ -66,6 +66,16 @@ Los cálculos tardan un tiempo aleatorio en realizarse, mientras se espera el c�
 
 
 ## API Retrofit
+
+- Generar una API con [FastAPI](https://fastapi.tiangolo.com/tutorial/)
+- Consumir API con [RetroFit](https://square.github.io/retrofit/)
+- [Ejemplo de GPT](./gpt-explicaciones/FastAPI%20math%20operations%20API.pdf)
+
+Realizar un API de operaciones básicas de matemáticas que se calculen en el servicio que hemos creado con FastAPI.
+
+
+Siguiente clase: Juntar Retrofit con MVVM
+
 
 
 
