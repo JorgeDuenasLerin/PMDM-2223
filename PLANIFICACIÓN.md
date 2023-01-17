@@ -77,6 +77,9 @@ Realizar un API de operaciones básicas de matemáticas que se calculen en el se
 Siguiente clase: Juntar Retrofit con MVVM
 
 
+Investigación avanzada:
+- [ORM](https://docs.ponyorm.org/firststeps.html)
+- [Pony-FastAPI](https://docs.ponyorm.org/integration_with_fastapi.html)
 
 
 ## Retrofit y ListView
