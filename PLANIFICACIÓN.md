@@ -7,7 +7,7 @@
   - Semana 16-20
     - [API Retrofit](#api-retrofit)
   - Semana 23-27
-    - Retrofit y ListView
+    - [Retrofit y ListView](#retrofit-y-listview)
 - Febrero
   - Semana 30-3
     - Autentificación
@@ -85,4 +85,11 @@ Investigación avanzada:
 ## Retrofit y ListView
 
 
-https://learntodroid.com/consuming-a-rest-api-using-retrofit2-with-the-mvvm-pattern-in-android/
+[https://learntodroid.com/consuming-a-rest-api-using-retrofit2-with-the-mvvm-pattern-in-android/](https://learntodroid.com/consuming-a-rest-api-using-retrofit2-with-the-mvvm-pattern-in-android/)
+
+
+Ejercicio:
+
+Busca un API pública, que no requiera autentificación o al menos tenga una parte que no la requiera. Realiza una tarea similar a la del ejemplo con esa API.
+
+Ejemplo: [Rick and Morty](https://rickandmortyapi.com/)
