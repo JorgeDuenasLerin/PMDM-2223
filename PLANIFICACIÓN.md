@@ -10,13 +10,14 @@
     - [Retrofit y ListView](#retrofit-y-listview)
 - Febrero
   - Semana 30-3
-    - Autentificación
+    - Acceso API
   - Semana 6-10
-    - Kotlin
+    - [Autentificación](https://www.youtube.com/watch?v=by-pChg9_A4)
   - Semana 13-17
-    - Kotlin
+    - Autentificación. Shared preferences
+    - Modificación de información
   - Semana 20-24
-    - Kotlin
+    - Ejercicios de repaso
 
 ## MVVM
 
