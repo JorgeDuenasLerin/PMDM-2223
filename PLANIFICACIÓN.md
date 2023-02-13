@@ -14,8 +14,10 @@
   - Semana 6-10
     - [Autentificación](https://www.youtube.com/watch?v=by-pChg9_A4)
   - Semana 13-17
-    - Autentificación. Shared preferences
-    - Modificación de información
+    - Ejemplo completo autentificación.
+    - Implementación de almacenar token con [Shared preferences](https://stackoverflow.com/questions/51596544/save-access-token-via-shared-preferences-android)
+    - Inyección de cabeceras con OkHTTP
+    - Plantear ejercicios
   - Semana 20-24
     - Ejercicios de repaso
 
