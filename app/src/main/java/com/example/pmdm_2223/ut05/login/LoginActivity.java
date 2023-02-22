@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.pmdm_2223.R;
 
@@ -43,6 +44,7 @@ public class LoginActivity extends AppCompatActivity {
                 mensaje.setText(respuesta.nonFieldErrors.get(0));
             } else {
                 /* Pasar a la siguiente Actividad */
+                Toast.makeText(this, "Login OK", Toast.LENGTH_LONG).show();
             }
         });
 
