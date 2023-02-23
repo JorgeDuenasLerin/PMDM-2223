@@ -63,6 +63,14 @@ Ejercicio de multicontador:
 ### Bares
 Nuevo API Python
 
+```
+Es necesario instalar django-filter
+
+pip install django-filter
+
+pip3 install django-filter
+```
+
 Un listado con los controles para filtrar por número de estrellas.
 
 ```
