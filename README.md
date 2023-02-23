@@ -49,3 +49,41 @@ Haz que la aplicación que muestra la información pida confirmación de los dat
 Ejercicio de multicontador:
  - Versión todo en la actividad: ```UT01_001```
  - Versión POO: ```UT01_002```
+
+
+## Acceso a API
+
+3 ejercicios con APIs
+
+### Rick and Morty
+- El API de Rick and Morty para sacar un listado de personajes.
+- Cuando pinches en uno vas al listado.
+- Debajo del listview habrá un botón anterios y siguiente para hacer la paginación.
+
+### Bares
+Nuevo API Python
+
+Un listado con los controles para filtrar por número de estrellas.
+
+```
+Más de 1 estrella
+http://127.0.0.1:8000/pmdm/api/bares/?estrellas__gt=1
+
+Más o igual a 2
+http://127.0.0.1:8000/pmdm/api/bares/?estrellas__gte=2
+
+```
+
+### Atracciones
+
+Nuevo API de python
+
+Una app con listado de atracciones, al pintar en detalle sacará el detalle con un listview y los comentarios.
+
+```
+Todo el listado
+http://127.0.0.1:8000/pmdm/api/atracciones/
+
+Listado de 1 y sus comentarios
+http://127.0.0.1:8000/pmdm/api/atracciones/1/
+```
