@@ -6,7 +6,9 @@ import django_filters.rest_framework
 # Create your views here.
 from rest_framework import viewsets
 from .models import Bar, Atraccion, Comentario
+from .models import Actor, Pelicula
 from .serializers import BarSerializer, AtraccionListSerializer, AtraccionDetailSerializer, ComentarioSerializer
+from .serializers import ActorSerializer, PeliculaDetailSerializer, PeliculaListSerializer
 
 
 class BarViewSet(viewsets.ModelViewSet):
@@ -31,3 +33,19 @@ class AtraccionViewSet(viewsets.ModelViewSet):
             return AtraccionDetailSerializer
         else: 
             return AtraccionListSerializer
+
+
+class ActorViewSet(viewsets.ModelViewSet):
+    queryset = Actor.objects.all()
+    serializer_class = ActorSerializer
+
+
+class PeliculaViewSet(viewsets.ModelViewSet):
+    queryset = Pelicula.objects.all()
+    serializer_class = PeliculaListSerializer
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return PeliculaDetailSerializer
+        else: 
+            return PeliculaListSerializer
