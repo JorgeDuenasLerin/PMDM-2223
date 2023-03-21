@@ -29,6 +29,7 @@ public class ut02Lanzadora extends AppCompatActivity {
         lanzar = findViewById(R.id.ut02idResultadosBoton);
         resultado = findViewById(R.id.ut02idResultadosLabel);
 
+        /*
         ActivityResultLauncher<Intent> someActivityResultLauncher = registerForActivityResult(
                 new ActivityResultContracts.StartActivityForResult(),
                 new ActivityResultCallback<ActivityResult>() {
@@ -41,6 +42,15 @@ public class ut02Lanzadora extends AppCompatActivity {
                         }
                     }
                 }
+        );*/
+        ActivityResultLauncher<Intent> lanzadora = registerForActivityResult(
+            new ActivityResultContracts.StartActivityForResult(), (result)->{
+                if (result.getResultCode() == Activity.RESULT_OK) {
+                    // Here, no request code
+                    Intent data = result.getData();
+                    resultado.setText(data.getStringExtra("DATOS"));
+                }
+            }
         );
 
         lanzar.setOnClickListener(new View.OnClickListener() {
@@ -48,7 +58,7 @@ public class ut02Lanzadora extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(ut02Lanzadora.this, ut02Calculadora.class);
                 intent.putExtra("DATOS", datos.getText().toString());
-                someActivityResultLauncher.launch(intent);
+                lanzadora.launch(intent);
             }
         });
     }
