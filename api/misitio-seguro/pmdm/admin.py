@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from .models import Atraccion, Bar, Comentario, Pelicula, Actor
+from .models import Atraccion, Bar, Comentario, Pelicula, Actor, Ingrediente
 
 class ComentarioInline(admin.StackedInline):
     model = Comentario
@@ -29,3 +29,4 @@ class PeliculaAdmin(admin.ModelAdmin):
 
 admin.site.register(Pelicula, PeliculaAdmin)
 admin.site.register(Actor)
+admin.site.register(Ingrediente)

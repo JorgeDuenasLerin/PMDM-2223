@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from .models import Atraccion, Bar, Comentario, Actor, Pelicula
+from .models import Atraccion, Bar, Comentario, Actor, Pelicula, Ingrediente
 
 
 class BarSerializer(serializers.HyperlinkedModelSerializer):
@@ -51,3 +51,24 @@ class PeliculaListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Pelicula
         fields = '__all__'
+
+
+class HyperlinkedModelSerializerWithId(serializers.HyperlinkedModelSerializer):
+    """Extend the HyperlinkedModelSerializer to add IDs as well for the best of
+    both worlds.
+    """
+    id = serializers.ReadOnlyField()
+
+
+class IngredienteListSerializer(HyperlinkedModelSerializerWithId):
+
+    class Meta:
+        model = Ingrediente
+        fields = ('id', 'nombre', 'tags')
+
+
+class IngredienteDetalleSerializer(HyperlinkedModelSerializerWithId):
+
+    class Meta:
+        model = Ingrediente
+        fields = ('id', 'nombre', 'tags', 'descripcion', 'kcalorias')
