@@ -55,3 +55,13 @@ class Ingrediente(models.Model):
 
     def __str__(self):
         return self.nombre
+
+
+class Resultado(models.Model):
+    nombre = models.CharField(max_length=200)
+    localidad = models.CharField(max_length=200)
+    fecha = models.DateTimeField('Conseguido')
+    centimetros = models.IntegerField(default=0)
+
+    def __str__(self):
+        return self.nombre

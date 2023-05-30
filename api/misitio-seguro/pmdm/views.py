@@ -6,8 +6,8 @@ import django_filters.rest_framework
 # Create your views here.
 from rest_framework import viewsets
 from .models import Bar, Atraccion, Comentario
-from .models import Actor, Pelicula, Ingrediente
-from .serializers import BarSerializer, AtraccionListSerializer, AtraccionDetailSerializer, ComentarioSerializer
+from .models import Actor, Pelicula, Ingrediente, Resultado
+from .serializers import BarSerializer, AtraccionListSerializer, AtraccionDetailSerializer, ComentarioSerializer, ResultadoListSerializer
 from .serializers import ActorSerializer, PeliculaDetailSerializer, PeliculaListSerializer
 from .serializers import IngredienteListSerializer, IngredienteDetalleSerializer
 
@@ -68,3 +68,8 @@ class IngredienteViewSet(viewsets.ModelViewSet):
             return IngredienteDetalleSerializer
         else: 
             return IngredienteListSerializer
+
+
+class ResultadoViewSet(viewsets.ModelViewSet):
+    queryset = Resultado.objects.all()
+    serializer_class = ResultadoListSerializer

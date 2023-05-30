@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User, Group
 from rest_framework import serializers
-from .models import Atraccion, Bar, Comentario, Actor, Pelicula, Ingrediente
+from .models import Atraccion, Bar, Comentario, Actor, Pelicula, Ingrediente, Resultado
 
 
 class BarSerializer(serializers.HyperlinkedModelSerializer):
@@ -72,3 +72,10 @@ class IngredienteDetalleSerializer(HyperlinkedModelSerializerWithId):
     class Meta:
         model = Ingrediente
         fields = ('id', 'nombre', 'tags', 'descripcion', 'kcalorias')
+
+
+class ResultadoListSerializer(serializers.HyperlinkedModelSerializer):
+
+    class Meta:
+        model = Resultado
+        fields = '__all__'
